@@ -45,9 +45,9 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         //pause
-        //document.addEventListener("pause", this.onPause, false);
+        document.addEventListener("pause", this.onPause, false);
         //resume
-        //document.addEventListener("resume", this.onResume, false);
+        document.addEventListener("resume", this.onResume, false);
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -63,8 +63,8 @@ var app = {
         //Iniciamos el intervalo de mostrar la notificaion local
         this.initIntervalNotificacion();
 
-        getValidarDeviceUuid("view", '5EC66107-E95D-402F-9A9E-3581999896D2', '');
-        /*
+        //getValidarDeviceUuid("view", '5EC66107-E95D-402F-9A9E-3581999896D2', '');
+
         //Inicializamos el pushNotification
         var pushNotification = window.plugins.pushNotification;
         if (device.platform == 'android' || device.platform == 'Android') {
@@ -74,7 +74,7 @@ var app = {
         else {
             //alert("Register called ios");
             pushNotification.register(this.tokenHandler,this.errorHandler,{"badge":"true","sound":"true","alert":"true","ecb":"app.onNotificationAPN"});
-        }*/
+        }
     },
     // result contains any message sent from the plugin call
     successHandler: function(result) {
