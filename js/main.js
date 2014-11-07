@@ -266,7 +266,7 @@ function getSectores(parent_id) {
                     parent.find(".ui-content").fadeIn("slow");
 
                     //al momento de touch cambiamos su imagen a color rosa
-                    /*container.find("a").hover(
+                    container.find("a").hover(
                      function(){
                      $(this).find(".ui-icon").css("background","url('"+BASE_URL_APP+"img/sectores/rosa/"+$(this).attr("lang")+"')  no-repeat scroll top center transparent");
                      $(this).find(".ui-icon").css("background-size","35px");
@@ -274,7 +274,7 @@ function getSectores(parent_id) {
                      function(){
                      $(this).find(".ui-icon").css("background","url('"+BASE_URL_APP+"img/sectores/"+$(this).attr("lang")+"')  no-repeat scroll top center transparent");
                      $(this).find(".ui-icon").css("background-size","35px");
-                     });*/
+                     });
                 });
             }else{
                 container.append("<p class='ningun_plan'>ACTUALMENTE NO HAY SECTORES DISPONIBLES.</p>");
@@ -326,7 +326,7 @@ function getCategorias(parent_id, sector_id) {
                     parent.find(".ui-content").fadeIn("slow");
                     
                     //al momento de touch cambiamos su imagen a color rosa
-                    /*container.find("a").hover(
+                    container.find("a").hover(
                     function(){
                         $(this).find(".ui-icon").css("background","url('"+BASE_URL_APP+"img/categorias/rosa/"+$(this).attr("lang")+"')  no-repeat scroll top center transparent");
                         $(this).find(".ui-icon").css("background-size","35px");
@@ -334,7 +334,7 @@ function getCategorias(parent_id, sector_id) {
                     function(){
                         $(this).find(".ui-icon").css("background","url('"+BASE_URL_APP+"img/categorias/"+$(this).attr("lang")+"')  no-repeat scroll top center transparent");
                         $(this).find(".ui-icon").css("background-size","35px");
-                    });*/
+                    });
                 });                
             }else{
                 container.append("<p class='ningun_plan'>ACTUALMENTE NO HAY CATEGORIAS DISPONIBLES.</p>");

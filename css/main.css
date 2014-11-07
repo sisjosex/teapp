@@ -40,7 +40,8 @@
     background-size: 100% auto;
     background: transparent;}
 .ui-content {padding: 0;}
-.ui-page{background: url("../img/bg_wrapper.jpg") no-repeat scroll 0 0 transparent;overflow: hidden; background-size:100% auto;
+/*.ui-page{background: url("../img/bg_wrapper.jpg") no-repeat scroll 0 0 transparent;overflow: hidden; background-size:100% auto;*/
+.ui-page{background: none;overflow: hidden; background-size:100% auto;
 background-attachment: fixed;}
 
 .nav-opciones.ui-grid-a > :nth-child(n) {width: 16%;margin-right: 2px;}
