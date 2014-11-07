@@ -256,7 +256,7 @@ background-attachment: fixed;}
 
 /* HOME */
 #home .ui-content{padding: 0 24px;}
-#home .logo.ui-title{margin-bottom: 0;}
+/*#home .logo.ui-title{margin-bottom: 0;}*/
 
 /* GUIA */
 #guia .ui-controlgroup, #como_funciona .ui-controlgroup{margin: 0;}
@@ -308,14 +308,13 @@ background-attachment: fixed;}
 #locales .ui-listview li .ui-li-thumb, #planes .ui-listview li .ui-li-thumb, #estoy_aqui .ui-listview li .ui-li-thumb{left: 0px;top: 0;max-height: 60px;min-height: 60px;max-width: 122px;width: 122px;}
 #locales .ui-listview .ui-li-static.ui-li-has-thumb, #planes .ui-listview .ui-li-static.ui-li-has-thumb, #estoy_aqui .ui-listview .ui-li-static.ui-li-has-thumb{padding-left: 122px;padding-right: 10px;padding-top: 0px;padding-bottom: 0;min-height: 60px;margin-top: 2px; margin-bottom: 2px;overflow: hidden;display: none;}
 #locales .ui-listview .ui-li-heading, #planes .ui-listview .ui-li-heading, #estoy_aqui .ui-listview .ui-li-heading{margin-top: 0;white-space: normal;font-size: 12px;text-shadow: none;margin-bottom: 0;line-height: 14px;}
-#locales .ui-listview .ui-li-heading a, #planes .ui-listview .ui-li-heading a, #estoy_aqui .ui-listview .ui-li-heading a{color: #ffd600;font-family:'century_gothicregular';font-size:22px;}
-#locales .ui-listview .content_recuadro, #planes .ui-listview .content_recuadro, #estoy_aqui .ui-listview .content_recuadro{background: url("../img/bg_item_li.png") no-repeat scroll top left transparent;position: relative;left: -360
-4px;padding-left: 24px;width: 100%;padding-bottom: 4px;}
+#locales .ui-listview .ui-li-heading a, #planes .ui-listview .ui-li-heading a, #estoy_aqui .ui-listview .ui-li-heading a{color: #ffd600;font-family:'century_gothicregular';font-size:20px;}
+#locales .ui-listview .content_recuadro, #planes .ui-listview .content_recuadro, #estoy_aqui .ui-listview .content_recuadro{background: url("../img/bg_item_li.png") no-repeat scroll top left transparent;position: relative;left: -24px;padding-left: 24px;width: 100%;padding-bottom: 4px;}
 #locales .ui-listview .content_descripcion, #planes .ui-listview .content_descripcion, #estoy_aqui .ui-listview .content_descripcion{overflow: hidden;border-bottom: 1px dotted #acacac;padding-bottom: 2px;min-height: 45px;max-height: 45px;padding-top: 8px;margin-left: 10px;}
 #locales .ui-listview .content_descripcion .ubicacion, #planes .ui-listview .content_descripcion .ubicacion, #estoy_aqui .ui-listview .content_descripcion .ubicacion{width: 52%;float: left;}
 #locales .ui-listview .content_descripcion .km, #planes .ui-listview .content_descripcion .km, #estoy_aqui .ui-listview .content_descripcion .km{width: 46%;padding: 12px 0;float: right;text-shadow: none;color: #fff;font-family:'century_gothicregular';font-size: 16px;}
 #locales .ui-listview .content_descripcion .km b, #planes .ui-listview .content_descripcion .km b, #estoy_aqui .ui-listview .content_descripcion .km b{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 80px;display: block;text-align: right;}
-#planes .ningun_plan, #recompensas .ningun_plan, #guia .ningun_plan{color: #df086f;font-size: 13px;text-shadow: none;padding: 10px;}
+#planes .ningun_plan, #recompensas .ningun_plan, #guia .ningun_plan{color: #fff;font-size: 13px;text-shadow: none;padding: 10px;}
 #recompensas .ningun_plan{font-size: 12px;}
 
 /* LOCAL DESCRIPCION  -  PLAN DESCRIPCION */
