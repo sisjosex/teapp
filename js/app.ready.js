@@ -45,14 +45,14 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         //pause
-        document.addEventListener("pause", this.onPause, false);
+        //document.addEventListener("pause", this.onPause, false);
         //resume
-        document.addEventListener("resume", this.onResume, false);
+        //document.addEventListener("resume", this.onResume, false);
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         //Hide the statusbar
-        //StatusBar.hide();
+        StatusBar.hide();
                 
         //Inicializamos el api de facebook
         openFB.init({appId: '537875786305519'});

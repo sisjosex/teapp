@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
-	id		    = "com.sysdecom.teapuntas"
+	id		    = "com.teapuntas"
     versionCode = "11.0"
 	version 	= "11.0">
 
@@ -11,7 +11,7 @@
 		Aplicacion mobile - Te Apuntas?
 	</description>
 
-	<author href="http://www.teappuntas.com"
+	<author href="http://www.teappuntas.es"
 		email="steven.alvarez.v@gmail.com">
 		SYSDECOM
 	</author>
@@ -60,15 +60,15 @@
 
     <!-- Define app icon for each platform. -->
     
-    <icon src="res/icon/android/icon-57.png"        gap:platform="android"    width="47" height="47" />
+    <icon src="res/icon/android/icon-50.png"        gap:platform="android"    width="47" height="47" />
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
     <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:qualifier="mdpi" />
     <icon src="res/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:qualifier="hdpi" />
     <icon src="res/icon/android/icon-96-xhdpi.png"  gap:platform="android"    gap:qualifier="xhdpi" />    
     <icon src="res/icon/ios/icon-72.png"            gap:platform="ios"        width="72" height="72" />
-    <icon src="res/icon/ios/icon-57-2x.png"         gap:platform="ios"        width="114" height="114" />
+    <icon src="res/icon/ios/icon-50@2x.png"         gap:platform="ios"        width="114" height="114" />
     <icon src="res/icon/ios/icon-60@2x.png"         gap:platform="ios"        width="120" height="120" />
-    <icon src="res/icon/ios/icon-72-2x.png"         gap:platform="ios"        width="144" height="144" />
+    <icon src="res/icon/ios/icon-72@2x.png"         gap:platform="ios"        width="144" height="144" />
     <icon src="res/icon/ios/icon-76@2x.png"         gap:platform="ios"        width="152" height="152" />
     
     <!-- Define app splash screen for each platform. -->

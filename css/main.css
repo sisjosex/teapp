@@ -34,9 +34,14 @@
 .btn-options .btn-second {width: 49%;float: right;}
 .btn-options .ui-btn-submit.ui-btn,.btn-options .ui-btn-normal.ui-btn{border-radius: 2px;}
 
-.ui-bar-a{border: none;background-image: inherit;background-size: 100% auto;}
+.ui-bar-a{
+    border: none;
+    background-image: none;
+    background-size: 100% auto;
+    background: transparent;}
 .ui-content {padding: 0;}
-.ui-page{background: url("../img/bg_wrapper.jpg") no-repeat scroll 0 0 transparent;overflow: hidden; background-size:100% auto;}
+.ui-page{background: url("../img/bg_wrapper.jpg") no-repeat scroll 0 0 transparent;overflow: hidden; background-size:100% auto;
+background-attachment: fixed;}
 
 .nav-opciones.ui-grid-a > :nth-child(n) {width: 16%;margin-right: 2px;}
 .nav-opciones li{float: left;}
@@ -182,7 +187,7 @@
 .ui-btn-submit.ui-btn-green.login .ui-btn-text{background: url("../img/icon_mi_perfil.png") no-repeat scroll left top transparent;background-position: 80% center;background-size: 24px;font-size: 14px;letter-spacing: -1px;font-family:'century_gothicregular';text-align: left;}
 .ui-btn-submit.ui-btn-orange .ui-btn-text{background: url("../img/icon_email.png") no-repeat scroll left top transparent;background-position: 80% center;background-size: 24px;font-size: 14px;letter-spacing: -1px;font-family:'century_gothicregular';}
 
-.logo.ui-title{margin: .2em 18% .0em;white-space: normal;padding-bottom:36px;}
+.logo.ui-title{margin: .2em 18% .0em;white-space: normal;padding-bottom:36px;padding-top: 18px;}
 .logo.ui-title img{width: 100%;height: auto;}
 .ui-popup .ui-btn-corner-all{border-radius: 1em;}
 #view .ui-content, #local_descripcion .ui-content, #recompensa_descripcion .ui-content, #mi_perfil .ui-content, #local_google_map .ui-content, #como_funciona_descripcion .ui-content, #plan_descripcion .ui-content, #quiero_participar_descripcion .ui-content, #registro_email .ui-content{background: rgba(0,0,0,0.5);margin: 0 15px 25px 15px;border-radius: 5px;border: 1px solid transparent;padding: 0;min-height: 190px; color:#fff}
@@ -200,8 +205,8 @@
 
 /* NAVIGATION FOOTER */
 .ui-footer{background: transparent;border-top: 0px solid transparent;}
-.ui-footer .ui-navbar{margin-top: 3px;background:transparent;height: 100%;}
-.ui-footer .ui-navbar li .ui-btn-icon-top .ui-btn-inner{padding-top: 32px;min-height: 18px;margin-bottom: -5px;}
+.ui-footer .ui-navbar{margin-top: 0px;background:transparent;height: 100%;}
+.ui-footer .ui-navbar li .ui-btn-icon-top .ui-btn-inner{padding-top: 32px;min-height: 18px;margin-bottom: 0px;}
 .nav-custom .ui-btn{background-image: none !important;border: none !important;font-family:'century_gothicregular';font-weight: normal !important;text-shadow: none !important;line-height: 8px !important;background: transparent;}
 .nav-custom .ui-btn .ui-btn-inner {border-top: none;}
 .nav-custom .ui-btn-inner .ui-btn-text{font-size: 14px;color:#00609a;}
@@ -234,9 +239,9 @@
 /* PUNTOS OBTENIDOS */
 .content_puntos{text-shadow: none;color: #a8a8a8;font-family:'century_gothicregular';margin: 0 5px;padding-top: 2px;padding-bottom: 5px;}
 .content_puntos span{line-height: 0;text-decoration: none;text-indent: -999px;overflow: hidden;display: inline-block;padding: 6px;width: 0;height: 0;color: #333;background-color: #424242;-webkit-box-shadow: inset rgba(0,0,0,0.25) 0 1px 2px;-moz-box-shadow: inset rgba(0,0,0,0.25) 0 1px 2px;box-shadow: inset rgba(0,0,0,0.25) 0 1px 2px;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;float: left;margin: 0 1px;}
-.content_puntos span.active{background-color: #df086f;-webkit-box-shadow: rgba(0,0,0,0.25) 0 1px 2px;-moz-box-shadow: rgba(0,0,0,0.25) 0 1px 2px;box-shadow: rgba(0,0,0,0.25) 0 1px 2px;}
+.content_puntos span.active{background-color: #ffd600;-webkit-box-shadow: rgba(0,0,0,0.25) 0 1px 2px;-moz-box-shadow: rgba(0,0,0,0.25) 0 1px 2px;box-shadow: rgba(0,0,0,0.25) 0 1px 2px;}
 .content_puntos i{display: inline-block;float: left;margin-top: -3px;}
-.content_puntos .puntos, .mis_puntos .puntos{color: #df086f;line-height: 14px;font-size: 17px;}
+.content_puntos .puntos, .mis_puntos .puntos{color: #ffd600;line-height: 14px;font-size: 17px;}
 .mis_puntos .ui-collapsible-content{overflow: hidden;font-size: 13px;color: #000;text-shadow: 0 0 0;padding: 10px 0 0 0;}
 .mis_puntos .ui-collapsible-content .item{overflow: hidden;clear: both;}
 
@@ -266,6 +271,21 @@
 #guia .guia_centros_comerciales .ui-icon{background: url("../img/guias/icon_centros_comerciales.png") no-repeat scroll top center transparent;padding-left: 3px;background-size: 35px;margin-top: -18px;}
 #guia .guia_otros .ui-icon{background: url("../img/guias/icon_otros.png") no-repeat scroll top center transparent;padding-left: 3px;background-size: 35px;margin-top: -18px;}
 #guia .ui-footer, #recompensas .ui-footer{background-color: #3d3b3b;}
+
+/* SECTOR */
+#sector .ui-controlgroup, #como_funciona .ui-controlgroup{margin: 0;}
+#sector .ui-controlgroup a, #como_funciona .ui-controlgroup a {background:rgba(0,0,0,0.5);/*background: url("../img/bg_guia.png") repeat scroll 0 0 transparent*/;margin-bottom: 2px !important;;border-radius: 0 0 0 0 !important;padding-right: 20px;border: 0;}
+#sector .ui-controlgroup a .ui-btn-inner, #como_funciona .ui-controlgroup a .ui-btn-inner {border-radius: 0 0 0 0;background: url("../img/list_arrow.png") no-repeat scroll center right transparent;border-top: 0px;padding-left: 52px;text-align: left;background-size: 13px;font-weight: normal;font-family:'century_gothicregular';font-size: 18px;padding-top: 18px;padding-bottom: 18px;}
+#sector .ui-controlgroup a .ui-btn-inner:hover, #como_funciona .ui-controlgroup a .ui-btn-inner:hover{/*background-position: 100% 131%;*/}
+#sector .ui-controlgroup a .ui-btn-inner:hover, #como_funciona .ui-controlgroup a .ui-btn-inner:hover{color: #d9096d;text-shadow: none;}
+#sector .ui-controlgroup a .ui-icon, #como_funciona .ui-controlgroup a .ui-icon{box-shadow: none;width: 32px;height: 32px;background-color: transparent;margin-top: -20px;border-radius: 0;}
+#sector .guia_restaurante .ui-icon{background: url("../img/guias/icon_restaurante.png") no-repeat scroll top center transparent;padding-left: 2px;background-size: 35px;}
+#sector .guia_salud_bienestar .ui-icon{background: url("../img/guias/icon_salud_belleza.png") no-repeat scroll top center transparent;padding-left: 4px;background-size: 35px;}
+#sector .guia_shopping .ui-icon{background: url("../img/guias/icon_shopping.png") no-repeat scroll top center transparent;padding-left: 4px;background-size: 35px;margin-top: -17px;}
+#sector .guia_ocio .ui-icon{background: url("../img/guias/icon_ocio.png") no-repeat scroll top center transparent;padding-left: 2px;background-size: 35px;margin-top: -14px;}
+#sector .guia_centros_comerciales .ui-icon{background: url("../img/guias/icon_centros_comerciales.png") no-repeat scroll top center transparent;padding-left: 3px;background-size: 35px;margin-top: -18px;}
+#sector .guia_otros .ui-icon{background: url("../img/guias/icon_otros.png") no-repeat scroll top center transparent;padding-left: 3px;background-size: 35px;margin-top: -18px;}
+#sector .ui-footer, #recompensas .ui-footer{background-color: #3d3b3b;}
 
 /* LOCALES - PLANES - ESTOY AQUI*/
 #locales .content_top, #planes .content_top, #estoy_aqui .content_top{background: transparent;width: 100%;}
@@ -331,17 +351,17 @@
 #recompensas .ui-listview li .ui-li-thumb{left: 0px;top: 0;max-height: 60px;max-width: 80px;min-height: 60px;}
 #recompensas .ui-listview li.ui-li-has-thumb .ui-btn-inner a.ui-link-inherit{min-height: 43px;padding-left: 80px;padding-top: 0em;padding-bottom: 0em;}
 #recompensas .ui-listview li.ui-btn-hover-a .ui-btn-inner .ui-icon-arrow-r{background-position: 0px 85%;}
-#recompensas .ui-listview li.ui-btn-hover-a .ui-btn-text .ui-li-heading, #recompensas .ui-listview .content_descripcion span{color: #df086f;text-shadow: none;}
+#recompensas .ui-listview li.ui-btn-hover-a .ui-btn-text .ui-li-heading, #recompensas .ui-listview .content_descripcion span{color: #fff;text-shadow: none;}
 #recompensas .ui-listview li.ui-btn-up-a,#recompensas .ui-listview li.ui-btn-hover-a{background-image: none;background: transparent;}
 #recompensas .ui-listview .ui-btn-inner .ui-icon-arrow-r{right: 18px;background-position: 0px 15%;}
 #recompensas .ui-listview .ui-btn-inner .ui-icon-shadow{-moz-box-shadow: 0 0 0 rgba(255,255,255,.4);-webkit-box-shadow: 0 0 0 rgba(255,255,255,.4) }
 #recompensas .ui-listview .ui-btn-inner .ui-icon{background-image: url("../img/list_arrow.png");width: 12px;height: 18px;background-size: 10px;background-color: transparent;-webkit-border-radius: 0;border-radius: 0;}
-#recompensas .ui-listview .ui-li-heading{margin-top: 0;font-size: 16px;text-shadow: none;margin-bottom: 0;font-weight: normal;}
+#recompensas .ui-listview .ui-li-heading{margin-top: 0;font-size: 20px;text-shadow: none;margin-bottom: 0;font-weight: normal;color:#ffd600;}
 #recompensas .ui-listview .content_recuadro{padding-top: 0.5em;padding-bottom: 0.5em;background: url("../img/bg_item_li.png") no-repeat scroll top left transparent;position: relative;left: -24px;padding-left: 34px;width: 100%;}
 #recompensas .ui-listview .content_descripcion,#recompensas .content_top{overflow: hidden;font-weight: normal;font-family:'century_gothicregular'}
 #recompensas .ui-listview .content_descripcion span{font-size: 14px;}
-#recompensas .content_top{margin: 10px 20px 10px;font-size: 19px;letter-spacing: -1px;}
-#recompensas .content_top span{color: #df086f;font-size: 25px;}
+#recompensas .content_top{margin: 10px 20px 10px;font-size: 20px;letter-spacing: -1px;color:#ffd600;}
+#recompensas .content_top span{color: #fff;font-size: 25px;}
 
 /* RECOMPENSA DESCRIPCION */
 #recompensa_descripcion .content_middle{border-bottom: 1px solid #fff;}
@@ -418,6 +438,7 @@
 
 .ui-footer .ui-navbar {
     background:url('../img/bg_footer.png') repeat-x 0 0 transparent;
+    padding-top: 8px;
 }
 
 h2.ui-li-heading {
@@ -428,6 +449,15 @@ h2.ui-li-heading {
 
 .content_details {
     color:#fff !important;
+}
+
+.ui-controlgroup-vertical .ui-btn-text {
+    color:#ffd600;
+    font-size: 20px;
+}
+
+.ui-navbar li .ui-btn .ui-btn-inner {
+    padding-bottom: 3px;
 }
 
 /* HOME IPAD AND MOBILE*/

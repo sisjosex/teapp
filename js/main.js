@@ -41,10 +41,17 @@ $("#ciudades").live("pagebeforeshow",function(event){
     getCiudades(page_id);
 });
 
+//SECTOR
+$('#sector').live('pagebeforeshow', function(event, ui) {
+    var page_id = $(this).attr("id");
+    getSectores(page_id);
+});
+
 //GUIA
 $('#guia').live('pagebeforeshow', function(event, ui) {
     var page_id = $(this).attr("id");
-    getCategorias(page_id);
+    var sector_id = getUrlVars()["id"];
+    getCategorias(page_id, sector_id);
 });
 
 //PLANES
@@ -217,15 +224,77 @@ function getCiudades(parent_id){
 	});
 }
 
+//OBTENEMOS LOS SECTORES
+function getSectores(parent_id) {
+    var parent = $("#"+parent_id);
+    var container = parent.find(".ui-controlgroup-controls");
+    container.find("a.clone").remove();
+
+    parent.find(".ui-content").hide();
+
+    console.log(BASE_URL_APP + 'sectores/mobileGetSectores'+'/'+CIUDAD_ID);
+
+    $.getJSON(BASE_URL_APP + 'sectores/mobileGetSectores'+'/'+CIUDAD_ID, function(data) {
+        if(data){
+
+            //mostramos loading
+            $.mobile.loading('show');
+
+            items = data.items;
+            if(items.length){
+                $.each(items, function(index, item) {
+                    var imagen = item.Sector.imagen!=""?item.Sector.imagen:"default.png";
+                    var clone = container.find('a:first').clone(true);
+                    clone.attr("href", "guia.html?id=" + item.Sector.id);
+                    clone.find(".ui-btn-text").html(item.Sector.title);
+                    clone.find(".ui-icon").css("background","url('"+BASE_URL_APP+"img/sectores/"+imagen+"')  no-repeat scroll top center transparent");
+                    clone.find(".ui-icon").css("background-size","35px");
+                    clone.find(".ui-icon").css("padding-left","5px");
+                    clone.find(".ui-icon").css("margin-top","-18px");
+                    clone.find(".ui-btn-inner").append('<span style="display:none;background:url('+BASE_URL_APP+"img/sectores/"+imagen+')  no-repeat scroll top center transparent)"></span>');
+                    clone.attr("lang",imagen);
+                    clone.css("display","block");
+                    clone.addClass("clone");
+
+                    //append container
+                    container.append(clone);
+                });
+
+                container.promise().done(function() {
+                    //ocultamos loading
+                    $.mobile.loading( 'hide' );
+                    parent.find(".ui-content").fadeIn("slow");
+
+                    //al momento de touch cambiamos su imagen a color rosa
+                    /*container.find("a").hover(
+                     function(){
+                     $(this).find(".ui-icon").css("background","url('"+BASE_URL_APP+"img/sectores/rosa/"+$(this).attr("lang")+"')  no-repeat scroll top center transparent");
+                     $(this).find(".ui-icon").css("background-size","35px");
+                     },
+                     function(){
+                     $(this).find(".ui-icon").css("background","url('"+BASE_URL_APP+"img/sectores/"+$(this).attr("lang")+"')  no-repeat scroll top center transparent");
+                     $(this).find(".ui-icon").css("background-size","35px");
+                     });*/
+                });
+            }else{
+                container.append("<p class='ningun_plan'>ACTUALMENTE NO HAY SECTORES DISPONIBLES.</p>");
+                //ocultamos loading
+                $.mobile.loading( 'hide' );
+                parent.find(".ui-content").fadeIn("slow");
+            }
+        }
+    });
+}
+
 //OBTENEMOS LAS CATEGORIAS
-function getCategorias(parent_id) {
+function getCategorias(parent_id, sector_id) {
     var parent = $("#"+parent_id);
     var container = parent.find(".ui-controlgroup-controls");
     container.find("a.clone").remove();
     
     parent.find(".ui-content").hide();
 	
-    $.getJSON(BASE_URL_APP + 'categorias/mobileGetCategorias'+'/'+CIUDAD_ID, function(data) {
+    $.getJSON(BASE_URL_APP + 'categorias/mobileGetCategorias'+'/'+CIUDAD_ID+'/'+sector_id, function(data) {
         if(data){
             
             //mostramos loading
