@@ -248,7 +248,7 @@ function getSectores(parent_id) {
                     clone.attr("href", "guia.html?id=" + item.Sector.id);
                     clone.find(".ui-btn-text").html(item.Sector.title);
                     clone.find(".ui-icon").css("background","url('"+BASE_URL_APP+"img/sectores/"+imagen+"')  no-repeat scroll top center transparent");
-                    clone.find(".ui-icon").css("background-size","35px");
+                    clone.find(".ui-icon").css("background-size","40px");
                     clone.find(".ui-icon").css("padding-left","5px");
                     clone.find(".ui-icon").css("margin-top","-18px");
                     clone.find(".ui-btn-inner").append('<span style="display:none;background:url('+BASE_URL_APP+"img/sectores/"+imagen+')  no-repeat scroll top center transparent)"></span>');
@@ -269,11 +269,11 @@ function getSectores(parent_id) {
                     container.find("a").hover(
                      function(){
                      $(this).find(".ui-icon").css("background","url('"+BASE_URL_APP+"img/sectores/rosa/"+$(this).attr("lang")+"')  no-repeat scroll top center transparent");
-                     $(this).find(".ui-icon").css("background-size","35px");
+                     $(this).find(".ui-icon").css("background-size","40px");
                      },
                      function(){
                      $(this).find(".ui-icon").css("background","url('"+BASE_URL_APP+"img/sectores/"+$(this).attr("lang")+"')  no-repeat scroll top center transparent");
-                     $(this).find(".ui-icon").css("background-size","35px");
+                     $(this).find(".ui-icon").css("background-size","40px");
                      });
                 });
             }else{
@@ -308,7 +308,7 @@ function getCategorias(parent_id, sector_id) {
                     clone.attr("href", "locales.html?id=" + item.Categoria.id);
                     clone.find(".ui-btn-text").html(item.Categoria.title);
                     clone.find(".ui-icon").css("background","url('"+BASE_URL_APP+"img/categorias/"+imagen+"')  no-repeat scroll top center transparent");
-                    clone.find(".ui-icon").css("background-size","35px");
+                    clone.find(".ui-icon").css("background-size","40px");
                     clone.find(".ui-icon").css("padding-left","5px");
                     clone.find(".ui-icon").css("margin-top","-18px");
                     clone.find(".ui-btn-inner").append('<span style="display:none;background:url('+BASE_URL_APP+"img/categorias/"+imagen+')  no-repeat scroll top center transparent)"></span>');
@@ -329,11 +329,11 @@ function getCategorias(parent_id, sector_id) {
                     container.find("a").hover(
                     function(){
                         $(this).find(".ui-icon").css("background","url('"+BASE_URL_APP+"img/categorias/rosa/"+$(this).attr("lang")+"')  no-repeat scroll top center transparent");
-                        $(this).find(".ui-icon").css("background-size","35px");
+                        $(this).find(".ui-icon").css("background-size","40px");
                     },
                     function(){
                         $(this).find(".ui-icon").css("background","url('"+BASE_URL_APP+"img/categorias/"+$(this).attr("lang")+"')  no-repeat scroll top center transparent");
-                        $(this).find(".ui-icon").css("background-size","35px");
+                        $(this).find(".ui-icon").css("background-size","40px");
                     });
                 });                
             }else{
@@ -978,7 +978,7 @@ function getComoFunciona(parent_id) {
                 clone.attr("href", "como_funciona_descripcion.html?id=" + item.ComoFunciona.id);
                 clone.find(".ui-btn-text").html(item.ComoFunciona.title);
                 clone.find(".ui-icon").css("background","url('"+BASE_URL_APP+"img/comofunciona/"+imagen+"')  no-repeat scroll top center transparent");
-                clone.find(".ui-icon").css("background-size","28px");
+                clone.find(".ui-icon").css("background-size","40px");
                 clone.find(".ui-icon").css("margin-top","-13px");
                 clone.attr("lang",imagen);
                 clone.css("display","block");
@@ -1443,10 +1443,12 @@ function getZonas(parent_id){
                         pagination : false,
                         items : numero_zonas,
                         itemsMobile : [479,numero_zonas],
-                        responsive: false,
+                        responsive: false
                     });
                     container.find(".nav-custom.zonas").find("li").css("width","100%");
                     container.find(".nav-custom.zonas").find(".owl-wrapper-outer").css("overflow","inherit");
+
+                    //container.find(".nav-custom.zonas").find(".owl-wrapper").css('background', 'rgba(0,0,0,0.5)');
                 });
                 
                 container.fadeIn("slow");

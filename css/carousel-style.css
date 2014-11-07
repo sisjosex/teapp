@@ -234,7 +234,7 @@
 .m-carousel-photos .m-item .ui-navbar li.ui-block-c .ui-btn-text{
     background: url("../img/next_carrousel_sprite.png") no-repeat scroll top center transparent;
     background-position: 0% 0%;
-    background-size: 20px;    
+    background-size: 20px;
 }
 .m-carousel-photos .m-item .ui-navbar li.ui-block-b{
     width: 80%;
@@ -247,7 +247,7 @@
     text-shadow: none;
     text-align: center;
     color: #ffd600;
-    font-size: 20px;
+    font-size: 30px;
     margin: 5px 0;
     font-family:'century_gothicregular';
 }
