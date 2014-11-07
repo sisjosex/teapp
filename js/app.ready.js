@@ -63,7 +63,7 @@ var app = {
         //Iniciamos el intervalo de mostrar la notificaion local
         this.initIntervalNotificacion();
 
-        getValidarDeviceUuid("view", '5EC66107-E95D-402F-9A9E-3581999896D2', '');
+        getValidarDeviceUuid("view", 'FF5416B8-0C3C-4301-A419-F06C06BB35FE', '');
 
         //Inicializamos el pushNotification
         /*var pushNotification = window.plugins.pushNotification;
