@@ -1,4 +1,3 @@
-
 /************************************ BIND EVENT *******************************************************/
 
 $(document).bind('pagebeforecreate', function(event){
@@ -47,11 +46,13 @@ $('#sector').live('pagebeforeshow', function(event, ui) {
     getSectores(page_id);
 });
 
+var SECTOR_ID;
+
 //GUIA
 $('#guia').live('pagebeforeshow', function(event, ui) {
     var page_id = $(this).attr("id");
-    var sector_id = getUrlVars()["id"];
-    getCategorias(page_id, sector_id);
+    SECTOR_ID = getUrlVars()["id"];
+    getCategorias(page_id, SECTOR_ID);
 });
 
 //PLANES
@@ -154,7 +155,17 @@ $('#registro_email').live('pagebeforeshow', function(event, ui) {
 $('#home').live('pagebeforeshow', function(event, ui) {
     var page_id = $(this).attr("id");
     //mandamos a ver si tiene alguna notificacion pendiente
+    $('#header-home').css('z-index', '100');
+    $('#header-home').css('display', 'block');
     verifyNotification();
+});
+
+var z_index_header = 2;
+//HOME
+$('#home').live('pageshow', function(event, ui) {
+    console.log('new z index: ' + z_index_header);
+    $('.ui-header.ui-bar-a').css('z-index', z_index_header);
+    z_index_header++;
 });
 
 /************************************ FUNCTIONS *******************************************************/
@@ -353,7 +364,7 @@ function getCategoriasByCarrousel(parent_id, categoria_id){
     container.find('li').remove();
     container.hide();
     
-    $.getJSON(BASE_URL_APP + 'categorias/mobileGetCategorias'+'/'+CIUDAD_ID, function(data) {
+    $.getJSON(BASE_URL_APP + 'categorias/mobileGetCategorias'+'/'+CIUDAD_ID+'/'+SECTOR_ID, function(data) {
         if(data){
             
     		items = data.items;

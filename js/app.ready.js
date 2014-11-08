@@ -52,7 +52,7 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         //Hide the statusbar
-        //StatusBar.hide();
+        StatusBar.hide();
                 
         //Inicializamos el api de facebook
         openFB.init({appId: '537875786305519'});
@@ -63,10 +63,10 @@ var app = {
         //Iniciamos el intervalo de mostrar la notificaion local
         this.initIntervalNotificacion();
 
-        getValidarDeviceUuid("view", 'FF5416B8-0C3C-4301-A419-F06C06BB35FE', '');
+        //getValidarDeviceUuid("view", 'FF5416B8-0C3C-4301-A419-F06C06BB35FE', '');
 
         //Inicializamos el pushNotification
-        /*var pushNotification = window.plugins.pushNotification;
+        var pushNotification = window.plugins.pushNotification;
         if (device.platform == 'android' || device.platform == 'Android') {
             //alert("Register called android");
             pushNotification.register(this.successHandler, this.errorHandler,{"senderID":"629734064389","ecb":"app.onNotificationGCM"});
@@ -74,7 +74,7 @@ var app = {
         else {
             //alert("Register called ios");
             pushNotification.register(this.tokenHandler,this.errorHandler,{"badge":"true","sound":"true","alert":"true","ecb":"app.onNotificationAPN"});
-        }*/
+        }
     },
     // result contains any message sent from the plugin call
     successHandler: function(result) {

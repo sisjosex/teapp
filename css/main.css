@@ -244,7 +244,7 @@ background-attachment: fixed;}
 .content_puntos i{display: inline-block;float: left;margin-top: -3px;}
 .content_puntos .puntos, .mis_puntos .puntos{color: #ffd600;line-height: 30px;
     font-size: 19px;}
-.mis_puntos .ui-collapsible-content{overflow: hidden;font-size: 30px;color: #fff;text-shadow: 0 0 0;padding: 10px 0 0 0;}
+.mis_puntos .ui-collapsible-content{overflow: hidden;font-size: 14px;color: #fff;text-shadow: 0 0 0;padding: 10px 0 0 0;}
 .mis_puntos .ui-collapsible-content .item{overflow: hidden;clear: both;}
 
 /* VIEW */
@@ -471,6 +471,11 @@ h2.ui-li-heading {
     background:rgba(0,0,0,0.5);
     border-bottom:1px solid #fff;
     height:47px;
+}
+
+.ui-btn-text {
+    font-family: 'century_gothicregular';
+    font-size: 20px;
 }
 
 /* HOME IPAD AND MOBILE*/
