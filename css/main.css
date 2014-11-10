@@ -210,7 +210,10 @@ background-attachment: fixed;}
 .ui-footer .ui-navbar li .ui-btn-icon-top .ui-btn-inner{padding-top: 32px;min-height: 18px;margin-bottom: 0px;}
 .nav-custom .ui-btn{background-image: none !important;border: none !important;font-family:'century_gothicregular';font-weight: normal !important;text-shadow: none !important;line-height: 8px !important;background: transparent;}
 .nav-custom .ui-btn .ui-btn-inner {border-top: none;}
-.nav-custom .ui-btn-inner .ui-btn-text{font-size: 15px;color:#00609a;}
+.nav-custom .ui-btn-inner .ui-btn-text{font-size: 8px;
+    color: #00609a;
+    line-height: 6px;
+    font-family: 'Arial';}
 .nav-custom .ui-btn .ui-icon {border-radius: 0 0 0 0 !important;box-shadow: none !important;height: 30px !important;margin-left: -15px !important;width: 30px !important;background-repeat: no-repeat;background-color: transparent;background-position: 50% 50%;}
 .nav-custom .ui-btn.nav_como_funciona .ui-icon {background-image: url("../img/icon_como_funciona.png");background-size: 18px 21px;}
 .nav-custom .ui-btn.nav_mi_zona .ui-icon {background-image: url("../img/icon_mi_zona.png");background-size: 25px 23px;}
@@ -225,11 +228,20 @@ background-attachment: fixed;}
 .nav-enlaces .ui-block-e .ui-btn-inner{padding-left: 3px;padding-right: 3px;}
 .nav-enlaces .ui-icon{border: none;box-shadow: 0 0 0;border-radius: 0;width: 35px;height: 35px;}
 .nav-enlaces .ui-btn-inner{padding-bottom: .4em !important;padding-top: 32px !important;}
-.nav-enlaces .icon_llamar .ui-icon{background: url("../img/icon_llamar_black.png") no-repeat scroll 2px 0 transparent;height: 25px;width: 20px;background-size: 15px;margin-top: 6px;}
-.nav-enlaces .icon_maps .ui-icon{background: url("../img/icon_maps_black.png") no-repeat scroll center top transparent;height: 24px;width: 28px;background-size: 27px;margin-left: -13px;margin-top: 5px;}
-.nav-enlaces .icon_web .ui-icon{background: url("../img/icon_web_black.png") no-repeat scroll center top transparent;height: 30px;width: 25px;background-size: 25px;margin-left: -10px;margin-top: 1px;}
+.nav-enlaces .icon_llamar .ui-icon{background: url("../img/icon_llamar_black.png") no-repeat scroll 2px 0 transparent;
+    height: 30px;
+    width: 27px;
+    background-size: 26px;
+    margin-top: 6px;}
+.nav-enlaces .icon_maps .ui-icon{background: url("../img/icon_maps_black.png") no-repeat scroll center top transparent;
+    height: 30px;
+    width: 32px;
+    background-size: 28px;
+    margin-left: -13px;
+    margin-top: 5px;}
+.nav-enlaces .icon_web .ui-icon{background: url("../img/icon_web_black.png") no-repeat scroll center top transparent;height: 30px;width: 25px;background-size: 25px;margin-left: -10px;margin-top: 6px;}
 .nav-enlaces .icon_twitter .ui-icon{background: url("../img/icon_twitter_black.png") no-repeat scroll center top transparent;height: 30px;width: 28px;background-size: 26px;margin-left: -14px;margin-top: 3px;}
-.nav-enlaces .icon_facebook .ui-icon{background: url("../img/icon_facebook_black.png") no-repeat scroll center top transparent;height: 30px;width: 28px;background-size: 26px;margin-left: -14px;margin-top: 3px;}
+.nav-enlaces .icon_facebook .ui-icon{background: url("../img/icon_facebook_black.png") no-repeat scroll center top transparent;height: 30px;width: 28px;background-size: 26px;margin-left: -14px;margin-top: 5px;}
 
 /* NAVIGATION INFORMACION */
 .nav-informacion .ui-btn-inner{border-top: none;padding-left: 8px;padding-right: 8px;}
@@ -334,7 +346,7 @@ background-attachment: fixed;}
 #local_descripcion .content_middle, #plan_descripcion .content_middle, #recompensa_descripcion .content_middle{margin-top: -18px;overflow: hidden;}
 #local_descripcion .content_middle .ui-navbar, #plan_descripcion .content_middle .ui-navbar{border-bottom: 1px solid #fff;}
 #local_descripcion .content_bottom, #plan_descripcion .content_bottom, #recompensa_descripcion .content_bottom{text-shadow: 0 0 0;font-family:'century_gothicregular';}
-#local_descripcion .content_bottom div.texto_descripcion, #plan_descripcion .content_bottom div.texto_descripcion, #recompensa_descripcion .content_bottom div.texto_descripcion{margin: 3px 12px;font-size: 23px;line-height: 14px;/*max-height: 72px;*/min-height: 72px;overflow: hidden;text-shadow: none;background: transparent;color: #fff;padding: 8px;}
+#local_descripcion .content_bottom div.texto_descripcion, #plan_descripcion .content_bottom div.texto_descripcion, #recompensa_descripcion .content_bottom div.texto_descripcion{margin: 3px 12px;font-size: 23px;line-height: 20px;/*max-height: 72px;*/min-height: 72px;overflow: hidden;text-shadow: none;background: transparent;color: #fff;padding: 8px;}
 #local_descripcion .content_bottom .informacion, #plan_descripcion .content_bottom .informacion{overflow: hidden;font-size: 13px;color: #000;margin: 0 12px;padding-top: 3px;margin-bottom: 12px;}
 #local_descripcion .content_bottom .informacion label{font-size: 23px;
     color: #ffd600;display: block;}
@@ -461,6 +473,7 @@ h2.ui-li-heading {
 .ui-controlgroup-vertical .ui-btn-text {
     color:#ffd600;
     font-size: 23px;
+    padding-left:4px;
 }
 
 .ui-navbar li .ui-btn .ui-btn-inner {
