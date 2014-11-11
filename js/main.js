@@ -235,6 +235,17 @@ function getCiudades(parent_id){
 	});
 }
 
+//OBTENEMOS LA IMAGEN DE FONDO
+function cargarImagenFondo() {
+
+    $.getJSON(BASE_URL_APP + 'imagenes/mobileGetImagen', function(data) {
+        if (data) {
+
+            $('.bgmain').css('background-image', "url('"+data.item+"')").fadeIn('slow');
+        }
+    });
+}
+
 //OBTENEMOS LOS SECTORES
 function getSectores(parent_id) {
     var parent = $("#"+parent_id);
