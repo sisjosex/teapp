@@ -45,7 +45,7 @@
    var liquid = {
 	
 		/* the name of the App */
-		appName: 'QuéPlan?',
+		appName: 'TeAppuntas?',
 		
 		/**
 		 * Configuration values needs to be declared below
@@ -65,13 +65,13 @@
 				response_type: "code",
 
 				// ## Update this value: The client_id obtained during application registration ##
-				client_id: "629734064389-ca988gfh0d9v7a2cq7l45o5c7hb9aaio.apps.googleusercontent.com",
+				client_id: "718845625782-29n2sifuivvs64nc8qh59g4j08d10tid.apps.googleusercontent.com",
 				
 				// ## Update this value: The client secret obtained during application registration ##
-				client_secret: "7oXIiclrkdxNT-HkSnmlmwUM", 		
+				client_secret: "Sl3nc2QO_DEnLG7pLWTF0yHh",
 				
 				// or urn:ietf:wg:oauth:2.0:oob
-				redirect_uri: "http://www.queplanmadrid.es/", 				 
+				redirect_uri: "http://www.teappuntas.es/",
 
 				// The URI registered with the application
 				redirect_url_token: "", 						

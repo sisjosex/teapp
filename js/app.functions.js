@@ -93,7 +93,7 @@ function shareTwitterWallPost(subtitulo, descripcion, imagen) {
     } else { // authorize the user and ask her to get the pin.
         cb.__call(
         	"oauth_requestToken",
-        		{oauth_callback: "http://www.queplanmadrid.es/"},
+        		{oauth_callback: "http://www.teappuntas.es/"},
         		function (reply) {
         			// nailed it!
            			cb.setToken(reply.oauth_token, reply.oauth_token_secret);
@@ -103,7 +103,7 @@ function shareTwitterWallPost(subtitulo, descripcion, imagen) {
         			    var ingreso_correcto = true;
         				window.plugins.ChildBrowser.showWebPage(auth_url, { showLocationBar : false }); // This opens the Twitter authorization / sign in page
                 		window.plugins.ChildBrowser.onLocationChange = function(loc){
-                			if (loc.indexOf("http://www.queplanmadrid.es/?") >= 0 && ingreso_correcto) {
+                			if (loc.indexOf("http://www.teappuntas.es/?") >= 0 && ingreso_correcto) {
                 			    ingreso_correcto = false;
                                 //close ChildBrowser
                                 window.plugins.ChildBrowser.close();
@@ -146,7 +146,7 @@ function shareTwitterWallPost(subtitulo, descripcion, imagen) {
 function loginTwitterConnect() {
     cb.__call(
     	"oauth_requestToken",
-    		{oauth_callback: "http://www.queplanmadrid.es/"},
+    		{oauth_callback: "http://www.teappuntas.es/"},
     		function (reply) {
     			// nailed it!
        			cb.setToken(reply.oauth_token, reply.oauth_token_secret);
@@ -156,7 +156,7 @@ function loginTwitterConnect() {
     			    var ingreso_correcto = true;
     				window.plugins.ChildBrowser.showWebPage(auth_url, { showLocationBar : false }); // This opens the Twitter authorization / sign in page
             		window.plugins.ChildBrowser.onLocationChange = function(loc){
-            			if (loc.indexOf("http://www.queplanmadrid.es/?") >= 0 && ingreso_correcto) {
+            			if (loc.indexOf("http://www.teappuntas.es/?") >= 0 && ingreso_correcto) {
             			    ingreso_correcto = false;
                             //close ChildBrowser
                             window.plugins.ChildBrowser.close();

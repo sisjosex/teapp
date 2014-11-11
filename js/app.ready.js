@@ -20,8 +20,8 @@ var EVENT = '';
 //Twitter Coebird
 var cb = new Codebird; // we will require this everywhere
 
-var consumer_key = 'pPrzITObRT4z0VoBAtag'; //YOUR Twitter CONSUMER_KEY
-var consumer_secret = '1L8V3qJwdDocLD653uYhgxU5TtIm45pdAhyE022EBLw'; //// YOUR Twitter CONSUMER_SECRET
+var consumer_key = 'BdlWRxSqjoAUqDRnkOzB4Ma2q'; //YOUR Twitter CONSUMER_KEY
+var consumer_secret = 'X0PbsFoLaiuw71G7bMcvmeaYxGaAEpLQ0jq5sh9Zn5LIKFvrVN'; //// YOUR Twitter CONSUMER_SECRET
 
 var app = {
     // Application Constructor
@@ -55,7 +55,7 @@ var app = {
         StatusBar.hide();
                 
         //Inicializamos el api de facebook
-        openFB.init({appId: '537875786305519'});
+        openFB.init({appId: '398472133633254'});
         
         //Inicializamos el api de twitter
         cb.setConsumerKey(consumer_key, consumer_secret);
@@ -69,7 +69,7 @@ var app = {
         var pushNotification = window.plugins.pushNotification;
         if (device.platform == 'android' || device.platform == 'Android') {
             //alert("Register called android");
-            pushNotification.register(this.successHandler, this.errorHandler,{"senderID":"629734064389","ecb":"app.onNotificationGCM"});
+            pushNotification.register(this.successHandler, this.errorHandler,{"senderID":"718845625782","ecb":"app.onNotificationGCM"});
         }
         else {
             //alert("Register called ios");
