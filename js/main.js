@@ -259,9 +259,9 @@ function getSectores(parent_id) {
                     clone.attr("href", "guia.html?id=" + item.Sector.id);
                     clone.find(".ui-btn-text").html(item.Sector.title);
                     clone.find(".ui-icon").css("background","url('"+BASE_URL_APP+"img/sectores/"+imagen+"')  no-repeat scroll top center transparent");
-                    clone.find(".ui-icon").css("background-size","40px");
+                    clone.find(".ui-icon").css("background-size","45px");
                     clone.find(".ui-icon").css("padding-left","5px");
-                    clone.find(".ui-icon").css("margin-top","-18px");
+                    clone.find(".ui-icon").css("margin-top","-23px");
                     clone.find(".ui-btn-inner").append('<span style="display:none;background:url('+BASE_URL_APP+"img/sectores/"+imagen+')  no-repeat scroll top center transparent)"></span>');
                     clone.attr("lang",imagen);
                     clone.css("display","block");
@@ -280,11 +280,11 @@ function getSectores(parent_id) {
                     container.find("a").hover(
                      function(){
                      $(this).find(".ui-icon").css("background","url('"+BASE_URL_APP+"img/sectores/rosa/"+$(this).attr("lang")+"')  no-repeat scroll top center transparent");
-                     $(this).find(".ui-icon").css("background-size","40px");
+                     $(this).find(".ui-icon").css("background-size","45px");
                      },
                      function(){
                      $(this).find(".ui-icon").css("background","url('"+BASE_URL_APP+"img/sectores/"+$(this).attr("lang")+"')  no-repeat scroll top center transparent");
-                     $(this).find(".ui-icon").css("background-size","40px");
+                     $(this).find(".ui-icon").css("background-size","45px");
                      });
                 });
             }else{
@@ -319,9 +319,9 @@ function getCategorias(parent_id, sector_id) {
                     clone.attr("href", "locales.html?id=" + item.Categoria.id);
                     clone.find(".ui-btn-text").html(item.Categoria.title);
                     clone.find(".ui-icon").css("background","url('"+BASE_URL_APP+"img/categorias/"+imagen+"')  no-repeat scroll top center transparent");
-                    clone.find(".ui-icon").css("background-size","40px");
+                    clone.find(".ui-icon").css("background-size","45px");
                     clone.find(".ui-icon").css("padding-left","5px");
-                    clone.find(".ui-icon").css("margin-top","-18px");
+                    clone.find(".ui-icon").css("margin-top","-23px");
                     clone.find(".ui-btn-inner").append('<span style="display:none;background:url('+BASE_URL_APP+"img/categorias/"+imagen+')  no-repeat scroll top center transparent)"></span>');
                     clone.attr("lang",imagen);
                     clone.css("display","block");
@@ -340,11 +340,11 @@ function getCategorias(parent_id, sector_id) {
                     container.find("a").hover(
                     function(){
                         $(this).find(".ui-icon").css("background","url('"+BASE_URL_APP+"img/categorias/rosa/"+$(this).attr("lang")+"')  no-repeat scroll top center transparent");
-                        $(this).find(".ui-icon").css("background-size","40px");
+                        $(this).find(".ui-icon").css("background-size","45px");
                     },
                     function(){
                         $(this).find(".ui-icon").css("background","url('"+BASE_URL_APP+"img/categorias/"+$(this).attr("lang")+"')  no-repeat scroll top center transparent");
-                        $(this).find(".ui-icon").css("background-size","40px");
+                        $(this).find(".ui-icon").css("background-size","45px");
                     });
                 });                
             }else{

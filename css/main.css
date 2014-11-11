@@ -210,9 +210,9 @@ background-attachment: fixed;}
 .ui-footer .ui-navbar li .ui-btn-icon-top .ui-btn-inner{padding-top: 32px;min-height: 18px;margin-bottom: 0px;}
 .nav-custom .ui-btn{background-image: none !important;border: none !important;font-family:'century_gothicregular';font-weight: normal !important;text-shadow: none !important;line-height: 8px !important;background: transparent;}
 .nav-custom .ui-btn .ui-btn-inner {border-top: none;}
-.nav-custom .ui-btn-inner .ui-btn-text{font-size: 8px;
+.nav-custom .ui-btn-inner .ui-btn-text{font-size: 12px;
     color: #00609a;
-    line-height: 6px;
+    line-height: 13px;
     font-family: 'Arial';}
 .nav-custom .ui-btn .ui-icon {border-radius: 0 0 0 0 !important;box-shadow: none !important;height: 30px !important;margin-left: -15px !important;width: 30px !important;background-repeat: no-repeat;background-color: transparent;background-position: 50% 50%;}
 .nav-custom .ui-btn.nav_como_funciona .ui-icon {background-image: url("../img/icon_como_funciona.png");background-size: 18px 21px;}
@@ -229,19 +229,40 @@ background-attachment: fixed;}
 .nav-enlaces .ui-icon{border: none;box-shadow: 0 0 0;border-radius: 0;width: 35px;height: 35px;}
 .nav-enlaces .ui-btn-inner{padding-bottom: .4em !important;padding-top: 32px !important;}
 .nav-enlaces .icon_llamar .ui-icon{background: url("../img/icon_llamar_black.png") no-repeat scroll 2px 0 transparent;
-    height: 30px;
-    width: 27px;
-    background-size: 26px;
-    margin-top: 6px;}
+    height: 48px;
+    width: 46px;
+    background-size: 38px;
+    margin-top: 0px;
+    margin-left: -12px;
+}
 .nav-enlaces .icon_maps .ui-icon{background: url("../img/icon_maps_black.png") no-repeat scroll center top transparent;
-    height: 30px;
-    width: 32px;
-    background-size: 28px;
+    height: 48px;
+    width: 46px;
+    background-size: 47px;
+    margin-top: 0px;
+    margin-left: -15px;
+}
+.nav-enlaces .icon_web .ui-icon{background: url("../img/icon_web_black.png") no-repeat scroll center top transparent;
+    height: 48px;
+    width: 46px;
+    background-size: 40px;
+    margin-top: 4px;
     margin-left: -13px;
-    margin-top: 5px;}
-.nav-enlaces .icon_web .ui-icon{background: url("../img/icon_web_black.png") no-repeat scroll center top transparent;height: 30px;width: 25px;background-size: 25px;margin-left: -10px;margin-top: 6px;}
-.nav-enlaces .icon_twitter .ui-icon{background: url("../img/icon_twitter_black.png") no-repeat scroll center top transparent;height: 30px;width: 28px;background-size: 26px;margin-left: -14px;margin-top: 3px;}
-.nav-enlaces .icon_facebook .ui-icon{background: url("../img/icon_facebook_black.png") no-repeat scroll center top transparent;height: 30px;width: 28px;background-size: 26px;margin-left: -14px;margin-top: 5px;}
+}
+.nav-enlaces .icon_twitter .ui-icon{background: url("../img/icon_twitter_black.png") no-repeat scroll center top transparent;
+    height: 48px;
+    width: 46px;
+    background-size: 40px;
+    margin-top: 2px;
+    margin-left: -15px;
+}
+.nav-enlaces .icon_facebook .ui-icon{background: url("../img/icon_facebook_black.png") no-repeat scroll center top transparent;
+    height: 48px;
+    width: 46px;
+    background-size: 40px;
+    margin-top: 5px;
+    margin-left: -26px;
+}
 
 /* NAVIGATION INFORMACION */
 .nav-informacion .ui-btn-inner{border-top: none;padding-left: 8px;padding-right: 8px;}
@@ -277,7 +298,7 @@ background-attachment: fixed;}
 #guia .ui-controlgroup a .ui-btn-inner, #como_funciona .ui-controlgroup a .ui-btn-inner {border-radius: 0 0 0 0;background: url("../img/list_arrow.png") no-repeat scroll center right transparent;border-top: 0px;padding-left: 52px;text-align: left;background-size: 13px;font-weight: normal;font-family:'century_gothicregular';font-size: 19px;padding-top: 18px;padding-bottom: 18px;}
 #guia .ui-controlgroup a .ui-btn-inner:hover, #como_funciona .ui-controlgroup a .ui-btn-inner:hover{/*background-position: 100% 131%;*/}
 #guia .ui-controlgroup a .ui-btn-inner:hover, #como_funciona .ui-controlgroup a .ui-btn-inner:hover{color: #d9096d;text-shadow: none;}
-#guia .ui-controlgroup a .ui-icon, #como_funciona .ui-controlgroup a .ui-icon{box-shadow: none;width: 32px;height: 32px;background-color: transparent;margin-top: -20px;border-radius: 0;}
+#guia .ui-controlgroup a .ui-icon, #como_funciona .ui-controlgroup a .ui-icon{box-shadow: none;width: 45px;height: 45px;background-color: transparent;margin-top: -20px;border-radius: 0;}
 #guia .guia_restaurante .ui-icon{background: url("../img/guias/icon_restaurante.png") no-repeat scroll top center transparent;padding-left: 2px;background-size: 35px;}
 #guia .guia_salud_bienestar .ui-icon{background: url("../img/guias/icon_salud_belleza.png") no-repeat scroll top center transparent;padding-left: 4px;background-size: 35px;}
 #guia .guia_shopping .ui-icon{background: url("../img/guias/icon_shopping.png") no-repeat scroll top center transparent;padding-left: 4px;background-size: 35px;margin-top: -17px;}
@@ -292,7 +313,7 @@ background-attachment: fixed;}
 #sector .ui-controlgroup a .ui-btn-inner, #como_funciona .ui-controlgroup a .ui-btn-inner {border-radius: 0 0 0 0;background: url("../img/list_arrow.png") no-repeat scroll center right transparent;border-top: 0px;padding-left: 52px;text-align: left;background-size: 13px;font-weight: normal;font-family:'century_gothicregular';font-size: 19px;padding-top: 18px;padding-bottom: 18px;}
 #sector .ui-controlgroup a .ui-btn-inner:hover, #como_funciona .ui-controlgroup a .ui-btn-inner:hover{/*background-position: 100% 131%;*/}
 #sector .ui-controlgroup a .ui-btn-inner:hover, #como_funciona .ui-controlgroup a .ui-btn-inner:hover{color: #d9096d;text-shadow: none;}
-#sector .ui-controlgroup a .ui-icon, #como_funciona .ui-controlgroup a .ui-icon{box-shadow: none;width: 40px;height: 40px;background-color: transparent;margin-top: -20px;border-radius: 0;}
+#sector .ui-controlgroup a .ui-icon, #como_funciona .ui-controlgroup a .ui-icon{box-shadow: none;width: 45px;height: 45px;background-color: transparent;margin-top: -20px;border-radius: 0;}
 #sector .guia_restaurante .ui-icon{background: url("../img/guias/icon_restaurante.png") no-repeat scroll top center transparent;padding-left: 2px;background-size: 35px;}
 #sector .guia_salud_bienestar .ui-icon{background: url("../img/guias/icon_salud_belleza.png") no-repeat scroll top center transparent;padding-left: 4px;background-size: 35px;}
 #sector .guia_shopping .ui-icon{background: url("../img/guias/icon_shopping.png") no-repeat scroll top center transparent;padding-left: 4px;background-size: 35px;margin-top: -17px;}
@@ -472,8 +493,8 @@ h2.ui-li-heading {
 
 .ui-controlgroup-vertical .ui-btn-text {
     color:#ffd600;
-    font-size: 23px;
-    padding-left:4px;
+    font-size: 29px;
+    padding-left:10px;
 }
 
 .ui-navbar li .ui-btn .ui-btn-inner {
