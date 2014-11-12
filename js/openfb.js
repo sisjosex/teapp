@@ -131,7 +131,8 @@ var openFB = (function () {
 //        logout();
 
         if (runningInCordova) {
-            oauthRedirectURL = "https://www.facebook.com/connect/login_success.html";
+            oauthRedirectURL = "https://www.teappuntas.es/"
+            //oauthRedirectURL = "https://www.facebook.com/connect/login_success.html";
         }
 
         startTime = new Date().getTime();
