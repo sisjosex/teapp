@@ -63,10 +63,10 @@ var app = {
         //Iniciamos el intervalo de mostrar la notificaion local
         this.initIntervalNotificacion();
 
-        getValidarDeviceUuid("view", 'FF5416B8-0C3C-4301-A419-F06C06BB35FE', '');
+        getValidarDeviceUuid("view", 'FF5416B8-0C3C-4301-A419-F06C06BB35FEE', '');
 
         //Inicializamos el pushNotification
-        /*var pushNotification = window.plugins.pushNotification;
+        var pushNotification = window.plugins.pushNotification;
         if (device.platform == 'android' || device.platform == 'Android') {
             //alert("Register called android");
             pushNotification.register(this.successHandler, this.errorHandler,{"senderID":"718845625782","ecb":"app.onNotificationGCM"});
@@ -74,7 +74,7 @@ var app = {
         else {
             //alert("Register called ios");
             pushNotification.register(this.tokenHandler,this.errorHandler,{"badge":"true","sound":"true","alert":"true","ecb":"app.onNotificationAPN"});
-        }*/
+        }
 
         cargarImagenFondo();
     },
