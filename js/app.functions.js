@@ -77,7 +77,7 @@ function shareFacebookWallPost(subtitulo, descripcion, imagen) {
 //shareTwitterWallPost
 function shareTwitterWallPost(subtitulo, descripcion, imagen) {
     
-    descripcion+= " via @QuePlanMadrid";
+    descripcion+= " via @TeAppuntas";
     
     // check if we already have access tokens
     if(localStorage.accessToken && localStorage.tokenSecret) {
