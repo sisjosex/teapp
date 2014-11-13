@@ -52,7 +52,7 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         //Hide the statusbar
-        //StatusBar.hide();
+        StatusBar.hide();
                 
         //Inicializamos el api de facebook
         openFB.init({appId: '398472133633254'});

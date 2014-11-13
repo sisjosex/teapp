@@ -58,7 +58,7 @@
                     var request = gapi.client.plus.people.get( {'userId' : 'me'} );
                     request.execute( function(profile) {
 
-                        var debug = "";
+                        /*var debug = "";
                         for(var x in profile) {
                             debug += x + "=" +profile[x] + " - ";
 
@@ -70,7 +70,7 @@
                         }
 
                         console.log(debug);
-                        alert(debug);
+                        alert(debug);*/
 
                         email = profile['emails'].filter(function(v) {
                             return v.type === 'account'; // Filter out the primary email
