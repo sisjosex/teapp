@@ -611,7 +611,7 @@ function alertaInvitado(){
 }
 
 //REGISTRAMOS LOS DATOS CUANDO SE REALIZA EL REGISTRO CON EMAL
-function registrar_email(container, email, password){
+function registrar_email(container, email, password, callback){
     $.ajax({
         data: {u_email:email, u_password:password, u_login_con:'email', d_plataforma:device.platform, d_version:device.version, d_uuid:device.uuid, d_name:device.name, u_token_notificacion:PUSH_NOTIFICATION_TOKEN},
         type: "POST",
@@ -624,9 +624,12 @@ function registrar_email(container, email, password){
             
             var success = data.success;
             if(success){
-                container.find(".codigovalidacion").show();
+                //container.find(".codigovalidacion").show();
                 container.find(".registrarse").hide();
-                showAlert(data.mensaje, 'Aviso', 'Aceptar');
+                //showAlert(data.mensaje, 'Aviso', 'Aceptar');
+
+                callback?callback():'';
+
             }else{
                 showAlert(data.mensaje, 'Error', 'Aceptar');
             }

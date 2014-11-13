@@ -1494,9 +1494,11 @@ function getRegistroEmail(parent_id){
             showLoadingCustom('Validando datos...');
             var opcion = $(this).attr("lang");
             if(opcion == "registrarse"){
-                registrar_email(container,email/*,password*/);
+                registrar_email(container,email/*,password*/, '', function(){
+                    login_email(container,form);
+                });
             }else if(opcion == "acceder"){
-                login_email(container,form);
+
             }
         }else{
             showAlert("Por favor ingrese un email valido"/* y password"*/);
