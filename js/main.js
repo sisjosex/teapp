@@ -1493,7 +1493,7 @@ function getRegistroEmail(parent_id){
         if(valEmail(email) /*&& password != ""*/){
             showLoadingCustom('Validando datos...');
             var opcion = $(this).attr("lang");
-            if(opcion == "registrarse"){
+            if(opcion == "acceder"){
                 registrar_email(container,email/*,password*/, '', function(){
                     login_email(container,form);
                 });
