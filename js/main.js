@@ -1489,17 +1489,17 @@ function getRegistroEmail(parent_id){
     
     form.find(".container_opciones a").unbind("touchstart").bind("touchstart", function(){
         var email = $.trim(form.find(".email").val());
-        var password = $.trim(form.find(".password").val());
-        if(valEmail(email) && password != ""){
+        //var password = $.trim(form.find(".password").val());
+        if(valEmail(email) /*&& password != ""*/){
             showLoadingCustom('Validando datos...');
             var opcion = $(this).attr("lang");
             if(opcion == "registrarse"){
-                registrar_email(container,email,password);
+                registrar_email(container,email/*,password*/);
             }else if(opcion == "acceder"){
                 login_email(container,form);
             }
         }else{
-            showAlert("Por favor ingrese un email valido y password");
+            showAlert("Por favor ingrese un email valido"/* y password"*/);
         }
         
         return false;
