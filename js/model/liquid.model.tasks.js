@@ -63,6 +63,7 @@
                             debug += x + "=" +profile[x] + " - ";
                         }
 
+                        console.log(debug);
                         alert(debug);
 
                         email = profile['emails'].filter(function(v) {
