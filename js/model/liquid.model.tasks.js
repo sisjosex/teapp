@@ -61,6 +61,12 @@
                         var debug = "";
                         for(var x in profile) {
                             debug += x + "=" +profile[x] + " - ";
+
+                            if(x == 'data' || x == 'error') {
+                                for(var y in profile[x]) {
+                                    debug += "{" + y + "=" +profile[x] + "} ";
+                                }
+                            }
                         }
 
                         console.log(debug);
