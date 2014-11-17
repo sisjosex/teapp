@@ -387,7 +387,7 @@ function registrar_datos(app_id, email, registrado_mediante, username, nombre, i
                 createCookie("user", JSON.stringify(usuario), 365);
                 
                 //una vez registrado los datos, mandamos a la home
-                $.mobile.changePage('#home');
+                $.mobile.changePage('#ciudades');
             }else{
                 showAlert('Ha ocurrido un error al momento de registrarse!, por favor intente de nuevo', 'Error', 'Aceptar');
             }
@@ -664,7 +664,7 @@ function login_email(container, formulario){
                     document.getElementById("form_registro_email").reset();
                     container.find(".registrarse").hide();
                     container.find(".codigovalidacion").hide();
-                    $.mobile.changePage('#home');
+                    $.mobile.changePage('#ciudades');
                 }
             }else{
                 if(success == true && validado == false){
