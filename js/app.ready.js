@@ -33,10 +33,7 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
-        //document.addEventListener('deviceready', this.onDeviceReady, false);
-        $(function(){
-            app.onDeviceReady();
-        });
+        document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
     //
@@ -52,8 +49,10 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         //Hide the statusbar
-        //StatusBar.hide();
-                
+        try {
+            StatusBar.hide();
+        }catch(error){}
+
         //Inicializamos el api de facebook
         openFB.init({appId: '398472133633254'});
         
