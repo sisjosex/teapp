@@ -188,11 +188,11 @@ var openFB = (function () {
         tokenStore.removeItem('fbtoken');
 
         if (token) {
-            logoutWindow = window.open(FB_LOGOUT_URL + '?access_token=' + token + '&next=' + logoutRedirectURL, '_blank', 'location=no');
+            //logoutWindow = window.open(FB_LOGOUT_URL + '?access_token=' + token + '&next=' + logoutRedirectURL, '_blank', 'location=no');
             //if (runningInCordova) {
-                setTimeout(function() {
-                    logoutWindow.close();
-                }, 700);
+                //setTimeout(function() {
+                    //logoutWindow.close();
+                //}, 1000);
             //}
         }
 
