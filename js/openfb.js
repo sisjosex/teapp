@@ -189,11 +189,11 @@ var openFB = (function () {
 
         if (token) {
             logoutWindow = window.open(FB_LOGOUT_URL + '?access_token=' + token + '&next=' + logoutRedirectURL, '_blank', 'location=no');
-            if (runningInCordova) {
+            //if (runningInCordova) {
                 setTimeout(function() {
                     logoutWindow.close();
                 }, 700);
-            }
+            //}
         }
 
         if (callback) {
