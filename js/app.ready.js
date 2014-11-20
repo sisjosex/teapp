@@ -66,6 +66,9 @@ var app = {
 
         //Inicializamos el pushNotification
         var pushNotification = window.plugins.pushNotification;
+
+        console.log('devide: ' + device.platform);
+
         if (device.platform == 'android' || device.platform == 'Android') {
             //alert("Register called android");
             pushNotification.register(this.successHandler, this.errorHandler,{"senderID":"718845625782","ecb":"app.onNotificationGCM"});
