@@ -2,9 +2,9 @@
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
 	id		    = "com.teapuntas"
-    versionCode = "2.3"
-	android-versionCode="203"
-	version 	= "2.3">
+    versionCode = "3.0"
+	android-versionCode="300"
+	version 	= "3.0">
 
 	<name>TeAppuntas?</name>
 
@@ -20,7 +20,7 @@
 	<content src="index.html" />
     
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-        <string>2.3</string>
+        <string>3.0</string>
     </gap:config-file>
 
 <feature name="File">
